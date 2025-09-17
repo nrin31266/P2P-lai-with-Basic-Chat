@@ -18,12 +18,15 @@
     "react-dom": "^18.2.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^6.28.2",
+    "simple-peer": "^9.11.1",
+    "simple-peer-light": "^9.10.0",
     "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.7",
+    "@types/simple-peer": "^9.11.8",
     "@vitejs/plugin-react": "^5.0.0",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.33.0",
@@ -34,6 +37,7 @@
     "tailwindcss": "^4.1.12",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
-    "vite": "^7.1.2"
+    "vite": "^7.1.2",
+    "vite-plugin-node-polyfills": "^0.24.0"
   }
 }

@@ -1,7 +1,8 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { getWebSocketClient } from "./socket";
 import type { CompatClient } from "@stomp/stompjs";
-import { useAppSelector } from "../redux/store";
+import { useAppSelector } from "../../redux/store";
+
 
 
 const WsContext = createContext<CompatClient | null>(null);
@@ -21,7 +22,9 @@ const WebSocketProvider = ({ children }: { children: React.ReactNode }) => {
         console.log("✅ Connected WebSocket");
         setStompClient(client);
       },
-      (err: unknown) => console.log("❌ WS connect error", err),
+      (err: unknown) => {
+        console.log("❌ WS connect error", err);
+      },
 
     );
 

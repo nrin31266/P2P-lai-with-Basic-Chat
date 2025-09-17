@@ -2,9 +2,13 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { useDispatch, useSelector, type TypedUseSelectorHook } from "react-redux";
 import authReducer from "./auth";
 import onlineUserReducer from "./onlineUsers";
+import peerConnectionsReducer from "./peerConnections";
+import chatReducer from "./chat";
 const rootReducer = combineReducers({
   auth: authReducer,
   onlineUsers: onlineUserReducer,
+  peerConnections: peerConnectionsReducer,
+  chat: chatReducer,
 });
 
 
